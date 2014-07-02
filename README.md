@@ -10,6 +10,7 @@ mobile development notes
 * UIKitUICatalog - UI Kit Catalogues
 * MobileHIG - Guidelines to write applications
 * http://alcatraz.io/
+* http://sparkinspector.com/
 
 # Useful Links 
 * http://iosdevtips.co/post/82232620790/best-xcode-plugins

@@ -15,3 +15,22 @@ mobile development notes
 
 # Useful Links 
 * http://iosdevtips.co/post/82232620790/best-xcode-plugins
+
+
+## NSLogger
+```
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    // Customize UI
+    [self customizeGlobalAppearance];
+    
+    // Init CocoaLumberjack NSLogger connector
+    [DDLog addLogger:[DDNSLoggerLogger sharedInstance]];
+    // Standard lumberjack initialization
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    // And then enable colors
+    [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
+    
+    return YES;
+}
+```
